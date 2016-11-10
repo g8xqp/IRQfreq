@@ -55,6 +55,7 @@ IRQfreq::~IRQfreq(){}
 
 // ISR(TIMER_OVF_vect){
 //   TCNT1 = IRQfreq.Tcnt_1;
+// if interrupt frequency above 500, do not need to test prescale
 //   if(IRQfreq.CheckPrescale()){
 //
 //    put interrupt code here
